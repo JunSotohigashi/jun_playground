@@ -9,5 +9,6 @@ docker run --rm -it \
     -e HOST_GID=$(id -g) \
     -e HOST_UNAME=$(id -un) \
     -e HOST_GNAME=$(id -gn) \
+    -e TERM=xterm-256color \
     $IMAGE_NAME \
     bash
