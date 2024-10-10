@@ -11,4 +11,3 @@ RUN chmod 777 /workspace
 
 COPY entrypoint.sh /
 ENTRYPOINT [ "/entrypoint.sh" ]
-CMD [ "/bin/bash" ]

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 if [ -z $HOST_UID ] && [ -z $HOST_UNAME ] && [ -z $HOST_GID ] && [ -z $HOST_GNAME ]; then
-  echo hoge
   bash
 else
   groupadd --gid $HOST_GID $HOST_GNAME
