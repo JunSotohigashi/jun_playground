@@ -5,7 +5,8 @@ RUN apt update && \
     apt clean
 
 RUN python3 -m pip install --no-cache-dir --upgrade pip && \
-    python3 -m pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+    python3 -m pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124 && \
+    python3 -m pip install --no-cache-dir pyvis
 
 WORKDIR /workspace
 RUN chmod 777 /workspace
