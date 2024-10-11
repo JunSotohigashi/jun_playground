@@ -1,10 +1,11 @@
 FROM python:3.12.7-slim-bookworm
 
 RUN apt update && \
-    apt install -y git
+    apt install -y git && \
+    apt clean
 
-RUN python3 -m pip install --upgrade pip && \
-    python3 -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+RUN python3 -m pip install --no-cache-dir --upgrade pip && \
+    python3 -m pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 
 WORKDIR /workspace
 RUN chmod 777 /workspace
