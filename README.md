@@ -4,3 +4,4 @@ hoge
 dev
 foo
 main
+pass
