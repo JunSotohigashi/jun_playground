@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_NAME='junsotohigashi/jun_playground:latest'
+IMAGE_NAME='junsotohigashi/jun_playground:python_cuda'
 
 docker run --rm -it \
     --gpus all \

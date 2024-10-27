@@ -1,7 +1,7 @@
 import networkx
 import pyvis
 
-SAVE_NAME = "mindmap.html"
+SAVE_NAME = "out/mindmap.html"
 
 nx_G = networkx.Graph()
 
